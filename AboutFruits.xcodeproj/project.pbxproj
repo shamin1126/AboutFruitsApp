@@ -20,6 +20,10 @@
 		8945247728C70D5300F06AE9 /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945247628C70D5300F06AE9 /* FruitModel.swift */; };
 		8945247A28C70EE400F06AE9 /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945247928C70EE400F06AE9 /* FruitData.swift */; };
 		8945247C28C71BC200F06AE9 /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945247B28C71BC200F06AE9 /* FruitRowView.swift */; };
+		8945247E28C7368300F06AE9 /* FruitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945247D28C7368300F06AE9 /* FruitDetailView.swift */; };
+		8945248028C73D1200F06AE9 /* FruitHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945247F28C73D1200F06AE9 /* FruitHeaderView.swift */; };
+		8945248228C7439400F06AE9 /* FruitLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945248128C7439400F06AE9 /* FruitLinkView.swift */; };
+		8945248428C7481700F06AE9 /* FruitNutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945248328C7481700F06AE9 /* FruitNutritionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		8945247628C70D5300F06AE9 /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
 		8945247928C70EE400F06AE9 /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 		8945247B28C71BC200F06AE9 /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
+		8945247D28C7368300F06AE9 /* FruitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailView.swift; sourceTree = "<group>"; };
+		8945247F28C73D1200F06AE9 /* FruitHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitHeaderView.swift; sourceTree = "<group>"; };
+		8945248128C7439400F06AE9 /* FruitLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitLinkView.swift; sourceTree = "<group>"; };
+		8945248328C7481700F06AE9 /* FruitNutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutritionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +155,7 @@
 				8945244328C6EA2900F06AE9 /* AboutFruitsApp.swift */,
 				8945244528C6EA2900F06AE9 /* ContentView.swift */,
 				8945247328C6FC7600F06AE9 /* OnboardingView.swift */,
+				8945247D28C7368300F06AE9 /* FruitDetailView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -157,6 +166,9 @@
 				8945246F28C6F47600F06AE9 /* FruitCardView.swift */,
 				8945247128C6F8C300F06AE9 /* StartButtonView.swift */,
 				8945247B28C71BC200F06AE9 /* FruitRowView.swift */,
+				8945247F28C73D1200F06AE9 /* FruitHeaderView.swift */,
+				8945248128C7439400F06AE9 /* FruitLinkView.swift */,
+				8945248328C7481700F06AE9 /* FruitNutritionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,11 +319,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8945248428C7481700F06AE9 /* FruitNutritionView.swift in Sources */,
 				8945247A28C70EE400F06AE9 /* FruitData.swift in Sources */,
 				8945247028C6F47600F06AE9 /* FruitCardView.swift in Sources */,
+				8945248228C7439400F06AE9 /* FruitLinkView.swift in Sources */,
 				8945247C28C71BC200F06AE9 /* FruitRowView.swift in Sources */,
 				8945247228C6F8C300F06AE9 /* StartButtonView.swift in Sources */,
+				8945247E28C7368300F06AE9 /* FruitDetailView.swift in Sources */,
 				8945244628C6EA2900F06AE9 /* ContentView.swift in Sources */,
+				8945248028C73D1200F06AE9 /* FruitHeaderView.swift in Sources */,
 				8945247428C6FC7600F06AE9 /* OnboardingView.swift in Sources */,
 				8945247728C70D5300F06AE9 /* FruitModel.swift in Sources */,
 				8945244428C6EA2900F06AE9 /* AboutFruitsApp.swift in Sources */,
