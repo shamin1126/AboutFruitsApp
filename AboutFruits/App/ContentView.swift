@@ -5,29 +5,55 @@
 //  Created by BJIT on 6/9/22.
 //
 
+//
+//  Created by Robert Petras
+//  SwiftUI Masterclass ♥ Better Apps. Less Code.
+//  https://swiftuimasterclass.com
+//
+
 import SwiftUI
 
 struct ContentView: View {
-    //MARK: PROPERTIES
-    var fruits: [Fruits] = fruitsData
-    var body: some View {
-        NavigationView {
-            List {
-                ForEach(fruits.shuffled()) {
-                    item in
-                    NavigationLink(destination: FruitDetailView(fruit: item)) {
-                    FruitRowView(fruit: item)
-                        .padding(.vertical, 4)
-                }
-            }
+  // MARK: - PROPERTIES
+
+  @State private var isShowingSettings: Bool = false
+
+  var fruits: [Fruits] = fruitsData
+
+  // MARK: - BODY
+
+  var body: some View {
+    NavigationView {
+      List {
+        ForEach(fruits.shuffled()) { item in
+          NavigationLink(destination: FruitDetailView(fruit: item)) {
+            FruitRowView(fruit: item)
+              .padding(.vertical, 4)
+          }
         }
-            .navigationTitle("Fruits")
-        }//:Navigation
-    }
+      }
+      .navigationTitle("Fruits")
+      .navigationBarItems(
+        trailing:
+          Button(action: {
+            isShowingSettings = true
+          }) {
+            Image(systemName: "slider.horizontal.3")
+          } //: BUTTON
+          .sheet(isPresented: $isShowingSettings) {
+            SettingsView()
+          }
+      )
+    } //: NAVIGATION
+    .navigationViewStyle(StackNavigationViewStyle())
+  }
 }
 
+// MARK: - PREVIEW
+
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView(fruits: fruitsData)
-    }
+  static var previews: some View {
+    ContentView(fruits: fruitsData)
+      .previewDevice("iPhone 11 Pro")
+  }
 }
